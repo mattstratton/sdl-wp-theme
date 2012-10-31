@@ -1,3 +1,9 @@
+.testimonialswidget_testimonial q {
+	/* the testimonial itself */
+	/* Remove quotes by uncommenting the following */
+	quotes: "\201c" "\201d" "\2018" "\2019";
+}
+
 .testimonialswidget_testimonial .testimonialswidget_image {
 	float: left;
 	margin-bottom: 1.4em;
@@ -9,15 +15,15 @@
 }
 
 .testimonialswidget_testimonial_list { 
-	display: block;
-	padding-bottom: 7.0em;
+	/*display: block;*/
+	padding-bottom: 1.0em;
 	padding-left:1.5em;
 	padding-right:1.5em;
 	padding-top: 1em;
-
+	overflow: hidden;
 	background-color: #eeeeee;
 	margin: 20px 10px 30px 10px;
-
+	text-align: justify;
 	border-color: black;
 	border-width: 2px;
 	-moz-box-shadow: 4px 4px 4px #000;
@@ -27,4 +33,21 @@
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
 	/* For IE 5.5 - 7 */
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+.testimonialswidget_testimonial .testimonialswidget_join_title {
+    display: none;
+}
+
+.testimonialswidget_testimonial .testimonialswidget_title {
+    display: block;
+}
+
+.testimonialswidget_testimonial .testimonialswidget_join {
+    display: none;
+}
+
+.testimonialswidget_testimonial .testimonialswidget_company,
+.testimonialswidget_testimonial .testimonialswidget_url {
+    display: block;
 }
