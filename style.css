@@ -210,33 +210,36 @@ div#header
 		
 div#blogtitle
 	{
-		width: 330px;
+		width: 380px;
 		float: left;
 		position: relative;
-		margin: 0px 0px 0px 20px;
+		margin: 0px 0px 0px 0px;
+		padding-left: 5px;
 		
 	}
 	
+div#blogtitle2 {
+	float:left;
+	position: relative;
+	padding-top: 20px;
+	
+}
+	
 div#headermenu
 	{
-		width: 610px;
+		width: 560px;
 		float: right;
 		position: relative;
 		text-transform: uppercase;
 		font-family: 'Marcellus SC', serif;
 		font-size: smaller;
-		margin-top: 20px;
-		text-align: center;
-		
+		margin-top: 20px;		
 		
 	}
 	
 #headermenu ul {margin: 0; padding: 0; 
 	list-style-type: none; list-style-image: none; }
-#headermenu li {display: inline;  padding: 0px 0px 0px 0px}
-
-#headermenu a {color: #4d6378}
-	
+#headermenu li {display: inline;  padding: 0px 0px 0px 0px}	
 
 
 div#submenu-nav
