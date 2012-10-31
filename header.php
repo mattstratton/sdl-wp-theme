@@ -43,6 +43,8 @@
             extraWidth:  1     // extra width can ensure lines don't sometimes turn over 
                                // due to slight rounding differences and font-family 
         }).superfish({
+        	dropShadows:   true,
+        	delay:         500,
 	        autoArrows:    false
         });  // call supersubs first, then superfish, so that subs are 
                          // not display:none when measuring. Call before initialising 
@@ -74,6 +76,9 @@ jQuery(window).load(function() {
 <div id="site">
 <div id="wrap">
 <div id="toplist">
+	<div class="searchbox">
+		<?php include (TEMPLATEPATH . '/searchform.php'); ?>
+	</div>
 	<div class="feed">
 		<a href="http://www.facebook.com/spiritdrivenliving"><img src = "<?php echo get_stylesheet_directory_uri(); ?>/images/social/facebook.png"></a>
 		<a href="https://twitter.com/rosemaryhurwitz"><img src = "<?php echo get_stylesheet_directory_uri(); ?>/images/social/twitter.png"></a>
@@ -86,7 +91,7 @@ jQuery(window).load(function() {
 	<div id="blogtitle">
 	<img src = "<?php echo get_stylesheet_directory_uri(); ?>/images/enneagram.png" align="left">
 		<div id="blogtitle2">
-			<h1><a href="/"><?php bloginfo('name'); ?></h1></a><h2><?php bloginfo('description'); ?></h2>
+			<h1><a href="/"><?php bloginfo('name'); ?></h1></a><img src = "<?php echo get_stylesheet_directory_uri(); ?>/images/awareness.png" align="left">
 		</div>
 		
 	</div>
