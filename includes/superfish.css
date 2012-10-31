@@ -80,6 +80,8 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
 	background:		#a8b2bc;
 	outline:		0;
+	text-decoration: underline;
+	color:green;
 }
 
 /*** arrows **/
