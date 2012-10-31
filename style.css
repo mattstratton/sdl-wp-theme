@@ -34,7 +34,7 @@ body, h1, textarea#comment, input#author, input#email, input#url
 	}
 
 /* Sans-serifs */
-ul#sidebar, div#footer, div#header h1 span, h2, h3, h4, h5, a.more-link, div.authormeta, div.postmeta, div.commentmeta, 
+ul#sidebar, div#header h1 span, h2, h3, h4, h5, a.more-link, div.authormeta, div.postmeta, div.commentmeta, 
 div.comment-author, div.comment-meta, p.commentloggedin, div.reply, div.cancel-comment-reply, h1.listhead, 
 div.post ul, div.page ul, div.post ol, div.page ol, div.nav
 	{
