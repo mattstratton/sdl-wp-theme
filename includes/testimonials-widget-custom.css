@@ -33,6 +33,8 @@
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
 	/* For IE 5.5 - 7 */
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 
 .testimonialswidget_testimonial .testimonialswidget_join_title {
