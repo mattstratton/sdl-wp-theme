@@ -15,12 +15,14 @@ Template Name: Home
 <div id="quotebar"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/quotebar3.png"></div>
 <div id="columns">
 	<div id="leftcolumn">
-		<?php query_posts( 'page_id=1153' ); ?>
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<?php the_content(); ?>
-		<?php endwhile; else: ?>
-			<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-		<?php endif; ?>
+		<div id="teaser"
+			<?php query_posts( 'page_id=1153' ); ?>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<?php the_content(); ?>
+			<?php endwhile; else: ?>
+				<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+			<?php endif; ?>
+		</div>
 	</div>
 	<div id="rightcolumn">
 			<div id="testimonial">
