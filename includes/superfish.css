@@ -4,19 +4,19 @@
 	margin:			0;
 	padding:		0;
 	list-style:		none;
-	opacity: 0.8;
+	opacity: 1.0;
 }
 .sf-menu {
-	line-height:	0.1;
+	line-height:	1.0;
 }
 .sf-menu ul {
 	position:		absolute;
 	top:			-999em;
 	width:			10em; /* left offset of submenus need to match (see below) */
-	opacity: 0.8;
+	opacity: 1.0;
 }
 .sf-menu ul li {
-	width:			100%;
+	width:			10em;
 }
 .sf-menu li:hover {
 	visibility:		inherit; /* fixes IE7 'sticky bug' */
@@ -25,6 +25,13 @@
 	float:			left;
 	position:		relative;
 }
+
+.sf-menu li ul a {
+	display:block; 
+	width:auto; 
+	white-space:no-wrap; 
+	
+}
 .sf-menu a {
 	display:		block;
 	position:		relative;
@@ -32,7 +39,7 @@
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
 	left:			0;
-	top:			1.5em; /* match top ul list item height */
+	top:			1.8em; /* match top ul list item height */
 	z-index:		99;
 }
 ul.sf-menu li:hover li ul,
@@ -57,12 +64,12 @@ ul.sf-menu li li li.sfHover ul {
 /*** DEMO SKIN ***/
 .sf-menu {
 	float:			left;
-	margin-bottom:	1em;
+	margin-bottom:	0em;
 }
 .sf-menu a {
 	border-left:	0px solid #fff;
 	border-top:		0px solid #CFDEFF;
-	padding: 		.75em 1em;
+	padding: 		.4em .4em;
 	text-decoration:none;
 }
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
@@ -89,7 +96,7 @@ ul.sf-menu li li li.sfHover ul {
 
 /*** arrows **/
 .sf-menu a.sf-with-ul {
-	padding-right: 	2.25em;
+	padding-right: 	1.4em;
 	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
 }
 .sf-sub-indicator {

@@ -87,10 +87,12 @@ function add_our_scripts() {
  
     // Lets use the one from Google AJAX API instead.
     wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js', false, '1.4.2');
+        // Now register HoverIntent
+    wp_register_script( 'hoverintent', $scriptdir.'hoverIntent.js',false, 'r6');
     // Register the Superfish javascript file
     wp_register_script( 'superfish', $scriptdir.'superfish.js', false, '1.4.8');
-    // Now register HoverIntent
-    wp_register_script( 'hoverintent', $scriptdir.'hoverIntent.js',false, 'r6');
+    // Supersubs script 
+    wp_register_script( 'supersubs', $scriptdir.'supersubs.js', false, '0.2b');
     // Register the Nivo slider pack
     wp_register_script( 'nivoslider', $scriptdir.'jquery.nivo.slider.pack.js', false, '3.1');
     // Now the superfish CSS
@@ -102,8 +104,9 @@ function add_our_scripts() {
  
     //load the scripts and style.
     wp_enqueue_script('jquery');
-    wp_enqueue_script('superfish');
     wp_enqueue_script('hoverintent');
+    wp_enqueue_script('superfish');
+    wp_enqueue_script('supersubs');
     wp_enqueue_script('nivoslider');
     wp_enqueue_style('superfish-css');
     wp_enqueue_style('superfish-navbar-css');

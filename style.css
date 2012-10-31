@@ -115,10 +115,10 @@ div#content p
 /* default */
 a:link, a:active, a:visited
 	{
-	color: #800;
+	color: #4d6378;
 	text-decoration: none;
 	}
-	a:hover { color: #111; text-decoration: underline; }
+	a:hover { color: #4d6378; text-decoration: underline; }
 
 div.postmeta span.comments a { font-size:12px; line-height:12px; font-weight:bold; padding: 2px 2px 1px 8px !important; text-transform: uppercase; border: 1px solid #e8e8e8; border-width: 0 0 0 1px; }
 
@@ -232,8 +232,8 @@ div#headermenu
 		position: relative;
 		text-transform: uppercase;
 		font-family: 'Marcellus SC', serif;
-		font-size: smaller;
-		margin-top: 20px;		
+		font-size: 14pt;
+		margin-top: 35px;		
 		
 	}
 	
