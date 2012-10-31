@@ -6,7 +6,7 @@
 	list-style:		none;
 }
 .sf-menu {
-	line-height:	1.0;
+	line-height:	0.1;
 }
 .sf-menu ul {
 	position:		absolute;
@@ -30,7 +30,7 @@
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
 	left:			0;
-	top:			2.5em; /* match top ul list item height */
+	top:			1.4em; /* match top ul list item height */
 	z-index:		99;
 }
 ul.sf-menu li:hover li ul,
@@ -64,7 +64,7 @@ ul.sf-menu li li li.sfHover ul {
 	text-decoration:none;
 }
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-	color:			#13a;
+	color:				#4d6378;;
 }
 .sf-menu li {
 	background:		#eeeeee;
@@ -73,6 +73,7 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu li li {
 	background:		#a8b2bc;
 }
+
 .sf-menu li li li {
 	background:		#9AAEDB;
 }
@@ -80,8 +81,8 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
 	background:		#a8b2bc;
 	outline:		0;
-	text-decoration: underline;
-	color:green;
+	text-decoration: none;
+	color:white;
 }
 
 /*** arrows **/
