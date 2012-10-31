@@ -33,7 +33,7 @@ Template Name: Home
 Developer of The LifeLine Technique and Author of The Power of Infinite Love & Gratitude
 		</div>
 		<div id = "blogteaser">
-		<h2>Latest blog post!</h2>
+		<h2>From Rosemary's blog...</h2>
 		<?php query_posts( 'posts_per_page=1' );?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<h3 id="post-<?php the_ID(); ?>">
