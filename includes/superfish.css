@@ -4,7 +4,7 @@
 	margin:			0;
 	padding:		0;
 	list-style:		none;
-	opacity: 1.0;
+	opacity: 1;
 }
 .sf-menu {
 	line-height:	1.0;
@@ -24,6 +24,11 @@
 .sf-menu li {
 	float:			left;
 	position:		relative;
+}
+
+.sf-menu li ul {
+	opacity: .9;
+	
 }
 
 .sf-menu li ul a {
