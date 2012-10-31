@@ -57,15 +57,17 @@
 
 /* Caption styles */
 .nivo-caption {
+	font-family: 'Marcellus SC', serif;
+	font-size: 24pt;
 	position:absolute;
 	left:0px;
 	bottom:0px;
-	background:#000;
-	color:#fff;
-	width:200px;
+	background:#a8b2bc;
+	color:#4d6378;
+	width:auto;
 	z-index:8;
 	padding: 5px 10px;
-	opacity: 0.8;
+	opacity: 0.7;
 	overflow: hidden;
 	display: none;
 	-moz-opacity: 0.8;
