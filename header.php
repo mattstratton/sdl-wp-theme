@@ -78,7 +78,11 @@ jQuery(window).load(function() {
 </div>
 <div id="header">
 	<div id="blogtitle">
-		<h1><a href="/"><?php bloginfo('name'); ?></h1></a><h2><?php bloginfo('description'); ?></h2>
+	<img src = "<?php echo get_stylesheet_directory_uri(); ?>/images/enneagram.png" align="left">
+		<div id="blogtitle2">
+			<h1><a href="/"><?php bloginfo('name'); ?></h1></a><h2><?php bloginfo('description'); ?></h2>
+		</div>
+		
 	</div>
 		<?php wp_nav_menu(array( 'sort_column' => 'menu_order', 'menu' => 'Header', 'container_class' => 'main-menu', 'menu_class' => 'sf-menu', 'container_id' => 'headermenu', 'theme_location'  => 'header-menu') ); ?>
 </div>
