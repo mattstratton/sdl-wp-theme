@@ -101,6 +101,8 @@ function add_our_scripts() {
     wp_register_style( 'superfish-navbar-css', $scriptdir.'superfish-navbar.css', false, '1.4.8');
     // Nivo CSS file
     wp_register_style( 'nivo-slider', $scriptdir.'nivo-slider.css', false, '3.1');
+    // Custom CSS for Testimonials widget
+    wp_register_style( 'testimonials', $scriptdir.'testimonials-widget-custom.css',false,false);
  
     //load the scripts and style.
     wp_enqueue_script('jquery');
@@ -111,6 +113,7 @@ function add_our_scripts() {
     wp_enqueue_style('superfish-css');
     wp_enqueue_style('superfish-navbar-css');
     wp_enqueue_style('nivo-slider');
+    wp_enqueue_style('testimonials');
     } // end the !is_admin function
 } //end add_our_scripts function
  
