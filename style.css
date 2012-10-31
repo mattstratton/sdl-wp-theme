@@ -330,7 +330,22 @@ div#testimonial {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
 	/* For IE 5.5 - 7 */
 	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 	
+}
+
+div#blogteaser {
+	border-color: black;
+	border-width: 2px;
+	border: solid;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 div#blogteaser h2 {
@@ -338,6 +353,10 @@ div#blogteaser h2 {
 	background-color: #4d6378;
 	color:white;
 	padding-left: 25px;
+	margin-left: -10px;
+	margin-right: -10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	
 }
 
