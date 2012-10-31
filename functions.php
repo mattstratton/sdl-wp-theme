@@ -74,4 +74,42 @@ if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'featured_image', 900, 300, true );
 }
 
+// enqueue scripts
+
+function add_our_scripts() {
+ 
+    if (!is_admin()) { // Add the scripts, but not to the wp-admin section.
+    // Adjust the below path to where scripts dir is, if you must.
+    $scriptdir = get_bloginfo('template_url')."/includes/";
+ 
+    // Remove the wordpresss inbuilt jQuery.
+    wp_deregister_script('jquery');
+ 
+    // Lets use the one from Google AJAX API instead.
+    wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js', false, '1.4.2');
+    // Register the Superfish javascript file
+    wp_register_script( 'superfish', $scriptdir.'superfish.js', false, '1.4.8');
+    // Now register HoverIntent
+    wp_register_script( 'hoverintent', $scriptdir.'hoverIntent.js',false, 'r6');
+    // Register the Nivo slider pack
+    wp_register_script( 'nivoslider', $scriptdir.'jquery.nivo.slider.pack.js', false, '3.1');
+    // Now the superfish CSS
+    wp_register_style( 'superfish-css', $scriptdir.'superfish.css', false, '1.4.8');
+    // Nivo CSS file
+    wp_register_style( 'nivo-slider', $scriptdir.'nivo-slider.css', false, '3.1');
+ 
+    //load the scripts and style.
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('superfish');
+    wp_enqueue_script('hoverintent');
+    wp_enqueue_script('nivoslider');
+    wp_enqueue_style('superfish-css');
+    wp_enqueue_style('nivo-slider');
+    } // end the !is_admin function
+} //end add_our_scripts function
+ 
+//Add our function to the wp_head. You can also use wp_print_scripts.
+add_action( 'wp_head', 'add_our_scripts',0);
+
+
 ?>

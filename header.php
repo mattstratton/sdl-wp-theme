@@ -25,16 +25,11 @@
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory')?>/includes/nivo-slider.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory')?>/includes/superfish.css" type="text/css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/includes/jquery.nivo.slider.pack.js"></script>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory')?>/includes/hoverIntent.js"></script> 
+
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link href='http://fonts.googleapis.com/css?family=Marcellus+SC|Dosis' rel='stylesheet' type='text/css'>
 
-<script src="<?php bloginfo('stylesheet_directory')?>/includes/superfish.js" type="text/javascript"></script>
 
 <!--set up Superfish-->
 <script type="text/javascript">
