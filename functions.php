@@ -95,6 +95,8 @@ function add_our_scripts() {
     wp_register_script( 'nivoslider', $scriptdir.'jquery.nivo.slider.pack.js', false, '3.1');
     // Now the superfish CSS
     wp_register_style( 'superfish-css', $scriptdir.'superfish.css', false, '1.4.8');
+    // Now the superfish navbar CSS
+    wp_register_style( 'superfish-navbar-css', $scriptdir.'superfish-navbar.css', false, '1.4.8');
     // Nivo CSS file
     wp_register_style( 'nivo-slider', $scriptdir.'nivo-slider.css', false, '3.1');
  
@@ -104,6 +106,7 @@ function add_our_scripts() {
     wp_enqueue_script('hoverintent');
     wp_enqueue_script('nivoslider');
     wp_enqueue_style('superfish-css');
+    wp_enqueue_style('superfish-navbar-css');
     wp_enqueue_style('nivo-slider');
     } // end the !is_admin function
 } //end add_our_scripts function

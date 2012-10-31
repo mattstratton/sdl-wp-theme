@@ -34,7 +34,11 @@
 <!--set up Superfish-->
 <script type="text/javascript">
 $(document).ready(function() {
-        $('ul.sf-menu').superfish();
+        $('ul.sf-menu').superfish({
+	        dropShadows: true
+	        
+	        
+        });
 });
 </script>
 
