@@ -1,0 +1,28 @@
+.gce-calendar th:first-child {
+	border-color:black;
+	border-style: solid;
+	border-width: 2px;
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.gce-calendar th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.gce-calendar th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.gce-page-grid .gce-calendar{ /* Main calendar table */
+	width:100%;
+	*border-collapse:collapse;
+	border:1px solid black;
+	color:#CCCCCC;
+	border-spacing: 0; 
+}
