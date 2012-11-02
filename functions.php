@@ -8,6 +8,7 @@ add_theme_support('automatic-feed-links');
 		register_sidebar(array('name'=>'About'));
 	    register_sidebar(array('name'=>'Sidebar'));
 	    register_sidebar(array('name'=>'Calendar Sidebar'));
+	    register_sidebar(array('name'=>'Contact Sidebar'));
 	    register_sidebar(array('name'=>'Footer A'));
 	    register_sidebar(array('name'=>'Footer B'));
 	    register_sidebar(array('name'=>'Footer C'));
