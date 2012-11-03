@@ -10,6 +10,8 @@ Template Name: Home
 		<A href="http://www.spiritdrivenliving.dev/enneagram-quiz/"><img src="/wp-content/uploads/slider/enneagram-slider.png" alt="" title="Enneagram Quiz"/></A>
 
 		<A href="http://www.spiritdrivenliving.dev/products/enneagram-jewelry/"><img src="/wp-content/uploads/slider/jewelry-slider.png" alt="" title="Enneagram Jewelry"/></a>
+		
+		<A href="http://www.spiritdrivenliving.dev/contact/"><img src="/wp-content/uploads/slider/contact-slider.png" alt="" title="Contact Rosemary"/></a>
 
 	</div>
 <div id="quotebar"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/quotebar3.png"></div>
