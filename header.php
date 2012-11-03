@@ -89,11 +89,7 @@ jQuery(window).load(function() {
 </div>
 <div id="header">
 	<div id="blogtitle">
-	<img src = "<?php echo get_stylesheet_directory_uri(); ?>/images/enneagram.png" align="left">
-		<div id="blogtitle2">
-			<h1><a href="/"><?php bloginfo('name'); ?></h1></a><img src = "<?php echo get_stylesheet_directory_uri(); ?>/images/awareness.png" align="left">
-		</div>
-		
+	<img src = "<?php echo get_stylesheet_directory_uri(); ?>/images/SDL-logo.png" align="left">
 	</div>
 		<?php wp_nav_menu(array( 'sort_column' => 'menu_order', 'menu' => 'Header', 'container_class' => 'main-menu', 'menu_class' => 'sf-menu', 'container_id' => 'headermenu', 'theme_location'  => 'header-menu') ); ?>
 </div>
