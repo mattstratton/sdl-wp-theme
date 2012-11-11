@@ -75,6 +75,8 @@ if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'featured_image', 900, 300, true );
 }
 
+
+
 // enqueue scripts
 
 function add_our_scripts() {
@@ -104,6 +106,8 @@ function add_our_scripts() {
     wp_register_style( 'nivo-slider', $scriptdir.'nivo-slider.css', false, '3.1');
     // Custom CSS for Testimonials widget
     wp_register_style( 'testimonials', $scriptdir.'testimonials-widget-custom.css',false,false);
+    // Custom CSS for Contact Form 7
+    wp_register_style('contact', $scriptdir.'contact-custom.css',false,false);
  
     //load the scripts and style.
     wp_enqueue_script('jquery');
@@ -115,11 +119,20 @@ function add_our_scripts() {
     wp_enqueue_style('superfish-navbar-css');
     wp_enqueue_style('nivo-slider');
     wp_enqueue_style('testimonials');
+    wp_enqueue_style('contact');
     } // end the !is_admin function
 } //end add_our_scripts function
  
 //Add our function to the wp_head. You can also use wp_print_scripts.
 add_action( 'wp_head', 'add_our_scripts',0);
 
+//Strip out CF7 stuff unless on Contact page
 
+// Add the Contact Form 7 scripts on selected pages
+add_action( 'wp_print_styles', 'my_deregister_styles', 100 );
+
+function my_deregister_styles() {
+	wp_deregister_style( 'wpcf7' );
+       // deregister as many stylesheets as you need...
+}
 ?>
