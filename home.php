@@ -1,6 +1,11 @@
 <?php get_header(); ?>
 
 	<div id="content" class="blogwidecolumn">
+	
+	<?php $page = (get_query_var('paged'))
+		? get_query_var('paged') : 1;
+		query_posts("cat=-7&showposts=5&paged=$page");
+		?>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<!-- This is each post in the result-->

@@ -292,6 +292,11 @@ div.blogwidecolumn {
 	width:930px;
 }
 
+div#newslettercolumn {	
+	width:620px;
+	float:left;
+}
+
 div#calendarcolumn
 {
 	width:620px;
@@ -551,6 +556,14 @@ div#calendarbar
 }
 
 div#calcontent
+{
+	float:left;
+	margin-top:20px;
+	width:auto;
+	margin-left:20px;
+}
+
+div#newslettercontent
 {
 	float:left;
 	margin-top:20px;
