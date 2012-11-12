@@ -89,7 +89,7 @@ jQuery(window).load(function() {
 </div>
 <div id="header">
 	<div id="blogtitle">
-	<img src = "<?php echo get_stylesheet_directory_uri(); ?>/images/SDL-logo.png" align="left">
+	<A href="/"><img src = "<?php echo get_stylesheet_directory_uri(); ?>/images/SDL-logo.png" align="left"></A>
 	</div>
 		<?php wp_nav_menu(array( 'sort_column' => 'menu_order', 'menu' => 'Header', 'container_class' => 'main-menu', 'menu_class' => 'sf-menu', 'container_id' => 'headermenu', 'theme_location'  => 'header-menu') ); ?>
 </div>

@@ -27,16 +27,10 @@ Template Name: Home
 		</div>
 	</div>
 	<div id="rightcolumn">
-			<div id="testimonial">
-		"Beyond the complexities of the mind resides the simplicity and beauty of the heart. Rosemary Hurwitz holds a deep and sophisticated understanding of the Enneagram and its personality types. She has a poetic way of interweaving this complex psychological system into practical ways for living a meaningful and purposeful life. I highly recommend her services to anyone searching to discover their truth."
-<br />
-<br />
-- Dr. Darren Weissman<br />
-Developer of The LifeLine Technique and Author of The Power of Infinite Love & Gratitude
-		</div>
-		<div id = "blogteaser">
-		<h2>From Rosemary's blog...</h2>
-		<?php query_posts( 'posts_per_page=1' );?>
+	
+			<div id = "announcement">
+			<h2>Latest News</h2>
+			<?php query_posts( 'posts_per_page=1&cat=4' );?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<h3 id="post-<?php the_ID(); ?>">
 				<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
@@ -46,6 +40,27 @@ Developer of The LifeLine Technique and Author of The Power of Infinite Love & G
 			<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 		<?php endif; ?>
 		</div>
+		
+			<div id="testimonial">
+		"Beyond the complexities of the mind resides the simplicity and beauty of the heart. Rosemary Hurwitz holds a deep and sophisticated understanding of the Enneagram and its personality types. She has a poetic way of interweaving this complex psychological system into practical ways for living a meaningful and purposeful life. I highly recommend her services to anyone searching to discover their truth."
+<br />
+<br />
+- Dr. Darren Weissman<br />
+Developer of The LifeLine Technique and Author of The Power of Infinite Love & Gratitude
+		</div>
+		<div id = "blogteaser">
+		<h2>From Rosemary's blog...</h2>
+		<?php query_posts( 'posts_per_page=1&cat=-7,-4' );?>
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<h3 id="post-<?php the_ID(); ?>">
+				<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
+					<?php the_title(); ?></a></h3>
+					<?php the_excerpt(); ?>
+		<?php endwhile; else: ?>
+			<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+		<?php endif; ?>
+		</div>
+		
 
 	</div>
 </div>

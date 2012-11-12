@@ -45,7 +45,7 @@ query_posts("cat=7&showposts=1&paged=$page");
 	<?php endif; ?>
 	</div>
 		<ul id="sidebar" class="column">
-<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Calendar Sidebar') ) : ?>
+<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Newsletter Sidebar') ) : ?>
 <?php endif; ?>
 	</ul>
 
